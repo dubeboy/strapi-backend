@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "quantity": {
+      "type": "biginteger"
+    },
+    "createdAt": {
+      "unique": true,
+      "required": true,
+      "type": "datetime"
+    },
+    "categories": {
+      "via": "products",
+      "collection": "category"
+    }
+  }
+}

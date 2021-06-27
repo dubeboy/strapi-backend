@@ -5,10 +5,4 @@
  * to customize this model
  */
 
-module.exports = {
-    lifecycles: {
-        afterCreate(result, data) {
-            console.log("created ITE> ❤️ 😭")
-        }
-    }
-};
+module.exports = {};

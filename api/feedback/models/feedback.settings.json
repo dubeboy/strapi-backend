@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feedbacks",
+  "info": {
+    "name": "Feedback",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "feedback": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "sentiment": {
+      "type": "integer",
+      "required": true,
+      "max": 5
+    }
+  }
+}
